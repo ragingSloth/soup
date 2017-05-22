@@ -152,6 +152,6 @@ class Parser(object):
 #TODO same key twice
 if __name__ == '__main__':
     d = {'a':1, 'b':2, 'c':3}
-    buttvert = Soup(d,prints=True)
+    tree = Soup(d,prints=True)
     s = [('A', 'a'), ('B', ['b']), 'c']
-    print buttvert.reconstruct(s)
+    print tree.reconstruct(s)
